@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alyas.sh</title>
+  <link rel="shortcut icon" type="image/jpg" href="linus.png"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <a href="index.html">
+          <span class="logo-text">alyas.sh</span>
+          <span class="logo-symbol">&#123;&#125;</span>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">CTF Walkthroughs</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li>
+            <label for="year-select">Select Year:</label>
+            <select id="year-select" onchange="redirectToYear(this.value)">
+              <option value="2024">2024</option>
+              <!-- Add more years as needed -->
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to my Pentesting blog!</h1>
+      <p>Here, you will find all my personnal CTF write-ups</p>
+    </section>
+
+    <section class="ctf-walkthroughs" id="2024-write-ups">
+      <h2>2024 write-ups</h2>
+      <div class="walkthrough">
+        <h3>Mr Robot</h3>
+        <div class="walkthrough-link">
+          <a href="wlk/mrrobot.html">
+            <span class="walkthrough-title">Mr Robot Walkthrough </span>
+            <span class="walkthrough-line"></span>
+          </a>
+        </div>
+      </div>
+      <div class="walkthrough">
+        <h3>SP - Eric</h3>
+        <div class="walkthrough-link">
+          <a href="wlk/speric.html">
+            <span class="walkthrough-title">SP - Eric Walkthrough</span>
+            <span class="walkthrough-line"></span>
+          </a>
+        </div>
+      </div>
+      <div class="walkthrough">
+        <h3>Basic Pentesting 1</h3>
+        <div class="walkthrough-link">
+          <a href="wlk/basicpentesting1.html">
+            <span class="walkthrough-title">Basic Pentesting 1 Walkthrough</span>
+            <span class="walkthrough-line"></span>
+          </a>
+        </div>
+      </div>
+      <!-- Add more walkthroughs as needed -->
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 alyas.sh portfolio. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function redirectToYear(year) {
+      window.location.href = `#${year}-write-ups`;
+    }
+  </script>
+</body>
+</html>
